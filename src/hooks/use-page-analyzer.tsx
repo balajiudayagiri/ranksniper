@@ -58,7 +58,7 @@ export function usePageSpeedAudit(): PageSpeedAuditResult {
     setDesktopData(null);
 
     try {
-      const apiKey = process.env.NEXT_PUBLIC_PAGESPEED_API_KEY;
+      const apiKey = process.env.PAGESPEED_API_KEY;
 
       if (!apiKey) {
         throw new Error("PageSpeed API key is not configured");
